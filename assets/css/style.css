@@ -78,17 +78,29 @@ main {
   overflow: hidden;
 }
 
-table td {
-  padding-top: 5px;
-}
-
 #container-hubungi-kami {
   display: flex;
   justify-content: space-around;
 }
 
+#form-hubungi {
+  width: 50%;
+}
+
+#form-hubungi input:not([type="radio"]), textarea {
+  width: 100%;
+}
+
+#form-hubungi button {
+  width: 100%;
+}
+
 #hasil-input-form {
-  background-color: darkcyan;
+  width: 50%;
+}
+
+table td {
+  padding-top: 7px;
 }
 
 /* Footer */
