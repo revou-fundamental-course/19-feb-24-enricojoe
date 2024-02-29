@@ -1,3 +1,15 @@
+body {
+  font-family: 'Inter';
+  font-size: 18px;
+  background-color: #0F172A;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
 /* Header */
 header {
   border-bottom: 2px solid;
@@ -5,7 +17,7 @@ header {
 
 nav {
   display: flex;
-  height: 60px;
+  height: 75px;
 }
 
 #logo {
@@ -22,6 +34,7 @@ nav {
 #menu {
   display: flex;
   justify-content: end;
+  align-items: center;
   padding-right: 35px;
   width: 50%;
 }
@@ -57,6 +70,25 @@ main {
   flex-direction: column;
 }
 
+#slider-container {
+  display: flex;
+  justify-content: center;
+  padding: 4px 0;
+}
+
+#slider {
+  width: 60%;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
 #content img {
   justify-self: center;
 }
@@ -80,19 +112,30 @@ main {
 
 #container-hubungi-kami {
   display: flex;
-  justify-content: space-around;
 }
 
 #form-hubungi {
   width: 50%;
 }
 
-#form-hubungi input:not([type="radio"]), textarea {
+input:not([type="radio"]), textarea {
   width: 100%;
 }
 
-#form-hubungi button {
+input, textarea, button{
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#button-submit {
+  display: flex;
+  justify-content: center;
   width: 100%;
+}
+
+#button-submit button {
+  width: 25%;
+  cursor: pointer;
 }
 
 #hasil-input-form {
@@ -108,3 +151,23 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+
+.navigation-button {
+  text-align: center;
+  position: relative;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;

@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ini Website</title>
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>
   <header>
     <nav>
       <div id="logo">
-        <img src="assets/image/logo.png" alt="Ini Website Logo">
+        <img src="assets/image/logo.jpg" alt="Ini Website Logo">
       </div>
       <div id="menu">
         <ul id="nav-button-container">
@@ -23,18 +24,33 @@
     </nav>
   </header>
   <main>
-    <div id="content">
+    <section id="content">
       <h1>
-        Hello World
+        Selamat Datang
       </h1>
       <p>
-        Berikut adalah gambar spongebob dan teman temannya
+        Berikut adalah menu yang kami sajikan
       </p>
-      <img src="assets/image/spongebob.jpg" alt="">
-    </div>
-    <div id="headquarter">
+      <div id="slider-container">
+        <div id="slider">
+          <div class="mySlides">
+            <img src="assets/image/bread1f.jpg" alt="Slide 1">
+          </div>
+    
+          <div class="mySlides">
+            <img src="assets/image/bread2f.jpg" alt="Slide 2">
+          </div>
+    
+          <div class="mySlides">
+            <img src="assets/image/bread3f.jpg" alt="Slide 3">
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    <section id="headquarter">
       <h2>
-        Lokasi HQ
+        Lokasi Toko
       </h2>
       <div id="container-hq">
         <div class="lokasi-hq">
@@ -50,8 +66,8 @@
           <p>Surabaya</p>
         </div>
       </div>
-    </div>
-    <div id="hubungi-kami">
+    </section>
+    <section id="hubungi-kami">
       <h2>
         Hubungi Kami
       </h2>
@@ -85,9 +101,9 @@
                     <label for="jk">Jenis Kelamin</label>
                   </td>
                   <td>
-                    <input id="laki" type="radio" value="laki-laki" name="jk">
+                    <input id="laki" type="radio" value="Laki-Laki" name="jk">
                     <label for="laki">Laki-Laki</label>
-                    <input id="perempuan" type="radio" value="perempuan" name="jk">
+                    <input id="perempuan" type="radio" value="Perempuan" name="jk">
                     <label for="perempuan">Perempuan</label>
                   </td>
                 </tr>
@@ -103,17 +119,23 @@
                 </tr>
               </div>
           </table>
-          <button type="submit">KIRIM</button>
+          <div id="button-submit">
+            <button type="submit" onclick="tampilForm()">
+              KIRIM
+            </button>
+          </div>
           </form>
         </div>
-        <div id="hasil-input-form">
-          Ini data diri
+        <div id="hasil">
+          Isi Form
+          <div id="hasil-area"></div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
   <footer>
     Made by EnricoJoe
   </footer>
+  <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
