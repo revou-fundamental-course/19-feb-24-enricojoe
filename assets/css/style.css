@@ -1,0 +1,98 @@
+/* Header */
+header {
+  border-bottom: 2px solid;
+}
+
+nav {
+  display: flex;
+  height: 60px;
+}
+
+#logo {
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 35px;
+}
+
+#logo img {
+  height: 100%;
+}
+
+#menu {
+  display: flex;
+  justify-content: end;
+  padding-right: 35px;
+  width: 50%;
+}
+
+#menu ul {
+  /* display: flex;
+  flex-direction: column;
+  text-decoration: none; */
+  list-style: none;
+}
+
+ul li {
+  padding-left: 20px;
+}
+
+#nav-button-container {
+  display: flex;
+}
+
+/* Main */
+main {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+#content, #headquarter, #hubungi-kami {
+  border-bottom: 2px solid;
+  padding: 25px 75px;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+#content img {
+  justify-self: center;
+}
+
+#container-hq {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lokasi-hq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lokasi-hq > img {
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+table td {
+  padding-top: 5px;
+}
+
+#container-hubungi-kami {
+  display: flex;
+  justify-content: space-around;
+}
+
+#hasil-input-form {
+  background-color: darkcyan;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+}
